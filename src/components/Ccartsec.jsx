@@ -36,17 +36,7 @@ const Ccartsec = () => {
                         },
                         
                     }}
-                    // onReachBeginning={() => setShowPrevButton(false)}
-
-                    // onReachEnd={() => setShowNextButton(false)}
-
-                    // onSlideChange={(swiper) => {
-                    //     console.log("Slide changed");
-                    //     setShowPrevButton(!swiper.isBeginning);
-                    //     console.log("prev:", !swiper.isBeginning);
-                    //     setShowNextButton(!swiper.isEnd);
-                    //     console.log("next:", !swiper.isEnd);
-                    // }}
+                    
                     navigation={{
                         prevEl: '.button-prev-slide',
                         nextEl: '.button-next-slide'
@@ -57,7 +47,7 @@ const Ccartsec = () => {
                     className="mySwiper relative group "
                 >
                     <div className='swiper-wrapper'>
-                        <SwiperSlide className='w-[391px] h-[31rem]  m-0 lg:ml-20' sx={{ width: "391px" }}>
+                        <SwiperSlide className='w-[391px] h-[31rem] mb-14  m-0 lg:ml-20' sx={{ width: "391px" }}>
                             <div className='text-[#333]'>
                                 <a className='flex  flex-col-reverse h-full items-center'>
                                     <div className='flex flex-col justify-center items-center gap-3'>

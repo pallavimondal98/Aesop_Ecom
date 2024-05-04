@@ -7,13 +7,7 @@ import Ccartsec from '../components/Ccartsec'
 import Fourthsec from '../components/Fourthsec'
 import Fifthsec from '../components/Fifthsec'
 import Footer from '../components/Footer'
-import ReactSlik from '../components/ReactSlik'
-// import ReactSlik from '../components/ReactSlik'
 
-
-
-
-// import Bcard from '../components/Bcard'
 
 const Homepage = () => {
   return (
@@ -26,7 +20,6 @@ const Homepage = () => {
         <Fourthsec/>
         <Fifthsec/>
         <Footer/>
-        {/* <ReactSlik/> */}
     </div>
   )
 }

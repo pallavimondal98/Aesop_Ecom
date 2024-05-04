@@ -15,8 +15,6 @@ import { Scrollbar, Navigation } from 'swiper/modules';
 
 const Fourthsec = () => {
 
-    const [showPrevButton, setShowPrevButton] = useState(false);
-    const [showNextButton, setShowNextButton] = useState(true);
 
     return (
         <>
@@ -53,16 +51,7 @@ const Fourthsec = () => {
                         <Swiper
                             scrollbar={true}
                             slidesPerView={3}
-                            onReachBeginning={() => setShowPrevButton(false)}
-
-                            onReachEnd={() => setShowNextButton(false)}
-
-                            onSlideChange={(swiper) => {
-                                setShowPrevButton(!swiper.isBeginning);
-                                console.log("prev:", setShowPrevButton);
-                                setShowNextButton(!swiper.isEnd);
-                                console.log("next:", setShowNextButton);
-                            }}
+                            
                             navigation={{
                                 nextEl: '.button-next-slide',
                                 prevEl: '.button-prev-slide'
@@ -160,16 +149,15 @@ const Fourthsec = () => {
                                 </SwiperSlide>
                             </div>
 
-                            {showPrevButton && (
+                            
                                 <div className='z-10 absolute top-[50%] button-prev-slide group-hover:left-0 -left-[23rem] duration-500 w-[80px] h-[80px] text-white bg-[#333] grid place-items-center cursor-pointer'>
                                     <ArrowBackIos />
                                 </div>
-                            )}
-                            {showNextButton && (
+                           
                                 <div className='z-10 absolute top-[50%] button-next-slide group-hover:right-0 -right-[23rem] duration-500 w-[80px] h-[80px] text-white bg-[#333] grid place-items-center cursor-pointer'>
                                     <ArrowForwardIos />
                                 </div>
-                            )}
+                           
                         </Swiper>
                     </div>
 
@@ -194,16 +182,7 @@ const Fourthsec = () => {
                         <Swiper
                             scrollbar={true}
                             slidesPerView={1}
-                            // onReachBeginning={() => setShowPrevButton(false)}
-
-                            // onReachEnd={() => setShowNextButton(false)}
-
-                            // onSlideChange={(swiper) => {
-                            //     setShowPrevButton(!swiper.isBeginning);
-                            //     console.log("prev:", setShowPrevButton);
-                            //     setShowNextButton(!swiper.isEnd);
-                            //     console.log("next:", setShowNextButton);
-                            // }}
+                            
                             navigation={{
                                 nextEl: '.button-next-slide',
                                 prevEl: '.button-prev-slide'
