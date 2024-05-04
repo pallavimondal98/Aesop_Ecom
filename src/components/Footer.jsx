@@ -35,7 +35,7 @@ const Footer = () => {
                                     <form>
                                         <div className='flex border lg:border-2  border-white pt-2 pb-0 px-2 lg:p-[13px] justify-between rounded-none lg:rounded-md mb-3'>
                                             <div>
-                                                <label for='newseletter-email' className=' absolute text-[22px] leading-[1.1]'>
+                                                <label htmlFor='newseletter-email' className=' absolute text-[22px] leading-[1.1]'>
                                                     Email address
                                                 </label>
                                                 <input className=' bg-transparent relative  ' id='newseletter-email' type='text' />

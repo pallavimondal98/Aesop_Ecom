@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { ChevronRight, ChevronLeft, PlayArrow, Pause } from '@mui/icons-material';
+import { ArrowBackIos, ArrowForwardIos, PlayArrow, Pause } from '@mui/icons-material';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -57,8 +57,8 @@ const Banner = () => {
                         </SwiperSlide>
                     ))}
                     <div className='flex justify-center items-center gap-12 text-[#333]'>
-                        <div className='button-prev-slide cursor-pointer relative top-[-6px]'><ChevronLeft /> </div>
-                        <div className='button-next-slide cursor-pointer relative top-[-6px]'><ChevronRight /></div>
+                        <div className='button-prev-slide cursor-pointer relative top-[-6px]'><ArrowBackIos/> </div>
+                        <div className='button-next-slide cursor-pointer relative top-[-6px]'><ArrowForwardIos/></div>
                     </div>
 
                 </Swiper>
